@@ -1,31 +1,140 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script language="JavaScript1.1">
-    </script>
-    <title> ShareFood </title>
-    <script src="OurScript.js"> </script>
-    <link rel="stylesheet" href="OurStyle.css">
-<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Oswald|PT+Serif&display=swap" rel="stylesheet">
-  </head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
 
-<button class="button button1">Sign Up</button>
-<!-- <button class="button button2">Log In</button> -->
-<form action="action_page.php">
-  <div class="imgcontainer">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>SF</b> ShareFood </a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <button onclick="location.href = 'desktop.html';" id="myButton" class="w3-bar-item w3-button" >Sign  Up </button>
+      <button onclick="location.href = 'logIn.html';" id="myButton" class="w3-bar-item w3-button" >Log  In </button>
+
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="lol.png" alt="ShareFood" width="2800" height="1575">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>SF</b></span> <span class="w3-hide-small w3-text-light-grey">ShareFood</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
   </div>
 
-  <div class="container">
-    <h3><label for="uname"><b>Username</b></label></h3>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Cute Pic #1</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Cute Pic #2</div>
+        <img src="/w3images/house2.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Cute Pic #3</div>
+        <img src="/w3images/house3.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Cute Pic #4</div>
+        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
 
-    <h3><label for="psw"><b>Password</b></label></h3>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-    <div align="center"> <h1>ShareFood</h1> </div>
-  </head>
-<body>
-    <div align="center"> <h2>Our mission is to make use of excess food from San Francisco resturants by providing a platform for resturants to reach charities and non-profits. </h2> </div>
-    <div align="center"> <h2>We aim to help those in need here in our community by providing food, while reducing food waste.</h2> </div>
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32" id="about">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+      <p>Our mission is to make use of excess food from San Francisco restaurants by providing a platform for restaurants to reach charities and non-profits in the area. Restaurants and charities/ organizations are easily able to make an account on our website to connect with each other. Once a restaurant logs in, they can contact a local organization and send a request to share food. The restaurant can specify if they can deliver the food themselves or need a pick-up. Once the organization accepts the request, they can send a representative or receive the food from the restaurant accordingly. Ultimately, we aim to help those in need in our community by providing food, while also reducing food waste.
+      </p>
+    </div>
 
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="/w3images/team2.jpg" alt="Shreshta" style="width:100%">
+        <h3>Shreshta Ranganathan</h3>
+        <p class="w3-opacity">CEO & Founder</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="/w3images/team1.jpg" alt="Gargi" style="width:100%">
+        <h3> Gargi Deshpande </h3>
+        <p class="w3-opacity">CEO & Founder</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="huh.jpg" alt="Helin" style="width:100%">
+        <h3> Helin Yilmaz </h3>
+        <p class="w3-opacity">CEO & Founder</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="/w3images/team4.jpg" alt="Mia" style="width:100%">
+        <h3> Mia Orr </h3>
+        <p class="w3-opacity">CEO & Founder</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="/w3images/team4.jpg" alt="Luciann" style="width:100%">
+        <h3> Luciann Nguyen </h3>
+        <p class="w3-opacity">CEO & Founder</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+      </div>
+    </div>
+
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project!</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+
+<!-- Image of location/map -->
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
 
 </body>
+</html>
+
