@@ -1,102 +1,73 @@
-<form action="action_page.php" style="border:1px solid #ccc">
-  <div class="container">
-    <a href="desktop.html"></a>
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <h1>Sign Up</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
-<p>
-    <label for="Char"><b> Charity </b></label>
-<select name  = "select">
-  <option value = "#1"> San Francisco-Marin Food Bank </option>
-  <option value = "#2"> Women's Community Clinic </option>
-  <option value = "#3"> St. Vincent De Paul Society Multi Service Center </option>
-  <option value = "#4"> Coalition On Homelessness San Francisco </option>
-  <option value = "#5"> Homeless Youth Alliance </option>
-  <option value = "#6"> Homeless Advocacy Project </option>
-  <option value = "#7"> Project Homeless Connect </option>
-  <option value = "#8"> Children of Shelters </option>
-  <option value = "#9"> Main Office & Immigration Services | Catholic Charities </option>
-  <option value = "#10"> The Sanctuary </option>
-  <option value = "#11"> Bayview Access Point | Catholic Charities </option>
-  <option value = "#12"> Homeless Prenatal Program </option>
-  <option value = "#13"> Compass Family Services </option>
-  <option value = "#14"> Navigation Center </option>
-  <option value = "#15"> St. Joseph's Family Center </option>
-  <option value = "#16"> Treasure Island Supportive Housing | Catholic Charities </option>
-  <option value = "#17"> Star Community House </option>
-  <option value = "#18"> Sanctuary Shelter </option>
-  <option value = "#19"> Catholic Charities Peter Claver Community </option>
-  <option value = "#20"> Leah's Pantry </option>
-  <option value = "#21"> Homeless Children's Network </option>
-  <option value = "#22"> Missionaries of Charity </option>
-  <option value = "#23"> Catholic Charities CCCYO </option>
-  <option value = "#24"> Hamilton Families | Hamilton Shelter Program </option>
-  <option value = "#25"> Compass Family Services </option>
-  <option value = "#26"> The Richmond Neighborhood Center </option>
+<div class="split right">
+  <div class="centered">
+
+    <form action="action_page.php" style="border:1px solid #ccc">
+      <div class="container">
+        <a href="desktop.html"></a>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <h1>Welcome Non-profits!</h1>
+        <p>Please select the name of your charity to find requests in your area.</p>
+        <hr>
+    <p>
+        <label for="Char"><b> Pick your Charity! </b></label>
+    <select name  = "select">
+      <option value = "#1"> San Francisco-Marin Food Bank </option>
+      <option value = "#2"> Women's Community Clinic </option>
+      <option value = "#3"> St. Vincent De Paul Society Multi Service Center </option>
+      <option value = "#4"> Coalition On Homelessness San Francisco </option>
+      <option value = "#5"> Homeless Youth Alliance </option>
+      <option value = "#6"> Homeless Advocacy Project </option>
+      <option value = "#7"> Project Homeless Connect </option>
+      <option value = "#8"> Children of Shelters </option>
+      <option value = "#9"> Main Office & Immigration Services | Catholic Charities </option>
+      <option value = "#10"> The Sanctuary </option>
+      <option value = "#11"> Bayview Access Point | Catholic Charities </option>
+      <option value = "#12"> Homeless Prenatal Program </option>
+      <option value = "#13"> Compass Family Services </option>
+      <option value = "#14"> Navigation Center </option>
+      <option value = "#15"> St. Joseph's Family Center </option>
+      <option value = "#16"> Treasure Island Supportive Housing | Catholic Charities </option>
+      <option value = "#17"> Star Community House </option>
+      <option value = "#18"> Sanctuary Shelter </option>
+      <option value = "#19"> Catholic Charities Peter Claver Community </option>
+      <option value = "#20"> Leah's Pantry </option>
+      <option value = "#21"> Homeless Children's Network </option>
+      <option value = "#22"> Missionaries of Charity </option>
+      <option value = "#23"> Catholic Charities CCCYO </option>
+      <option value = "#24"> Hamilton Families | Hamilton Shelter Program </option>
+      <option value = "#25"> Compass Family Services </option>
+      <option value = "#26"> The Richmond Neighborhood Center </option>
+    </select>
+  </p>
+
+    <p>
+      <label for="requests"><b> Your Requests:</b></label>
+      </p>
+
+    <p>
+          <textarea rows="4" cols="50">
+          placeholder text!
+        </textarea>
+    </p>
 
 
-  </select>
-</p>
+        <div class="clearfix">
+          <button type="submit" formaction="enter"> Accept!! </button>
 
-<p>
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-</p>
-
-<p>
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-</p>
-
-
-<p>
-    <label for="addie"><b>Address</b></label>
-    <input type="text" placeholder="Enter Adderess" name="Address" required>
-</p>
-
-<p>
-    <label for="city"><b> City </b></label>
-    <input type="text" placeholder="Enter City" name="City" required>
-</p>
-
-<p>
-    <label for="state"><b>State</b></label>
-    <input type="text" placeholder="Enter State" name="State" required>
-</p>
-
-<p>
-    <label for="zip"><b>Zip Code</b></label>
-    <input type="text" placeholder="Enter Zip Code" name="Zip Code" required>
-</p>
-
-
-<p>
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-</p>
-
-<p>
-    <label for="ein"><b>EIN</b></label>
-    <input type="text" placeholder="Enter EIN (Tax ID #)" name="EIN (Tax ID #)" required>
-</p>
-
-<p>
-    <label for="Bio"><b> Bio </b></label>
-    <input type="text" placeholder="Add a Bio" name="Bio">
-</p>
-
-<p>
-    <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-    </label>
-</p>
-
-    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-    <div class="clearfix">
-      <button type="submit" formaction="enter"> Sign Me Up!! </button>
-
+        </div>
+      </div>
+    </form>
+    <!DOCTYPE html>
+    <html>
+    <body>
+    <div class="split left">
+      <div class="centered">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1c8G3HxtKYsn5InoykRYXJNlgNDj2-W3v&hl=en" width="640" height="480"></iframe>
+      </div>
     </div>
+    </body>
+    </html>
+
   </div>
-</form>
+</div>
+
