@@ -6,7 +6,7 @@ body{
 .brand{
   font-family: 'Unica One', cursive;
   font-size: 100px;
-  font-style: bold;
+  font-weight: bold;
 }
 
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
