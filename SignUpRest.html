@@ -1,7 +1,19 @@
-<script src="shareFoodScript.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="shareFoodScript.js"></script>
+</head>
+<body>
+<div class="split left">
+  <div class="centered">
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1GkBElfGlu4rvUT7HrpSs5wa-cMkMhV46" width="640" height="480"></iframe>
+  </div>
+</div>
+
 <div class="split right">
   <div class="centered">
-    <form action="action_page.php" style="border:1px solid #ccc">
+    <!-- <form action="action_page.php" style="border:1px solid #ccc"> -->
+    <!-- <form style="border:1px solid #ccc"> -->
       <div class="container">
         <a href="desktop.html"></a>
         <link rel="stylesheet" type="text/css" href="SignUpStyle.css">
@@ -10,9 +22,9 @@
         <hr>
         <p>
             <label for="Char"><b> Find your Restaurant! </b></label>
-        <select name  = "select">
-          <option value = "#1"> Soma Restaurant & Bar </option>
-          <option value = "#2"> Restaurant Anzu </option>
+        <select id = "restaurant" name  = "select">
+          <option value="#1"> Soma Restaurant & Bar </option>
+          <option value="#2"> Restaurant Anzu </option>
           <option value = "#3"> Gyro Xpress </option>
           <option value = "#4"> Park Gyros </option>
           <option value = "#5"> Van Ness Cafe & Gyros </option>
@@ -78,8 +90,8 @@
 
         <p>
             <label for="Char"><b> Pick a Charity! </b></label>
-        <select name  = "select">
-          <option value = "#1"> San Francisco-Marin Food Bank </option>
+        <select id = "charity" name  = "select">
+          <option value="#1"> San Francisco-Marin Food Bank </option>
           <option value = "#2"> Women's Community Clinic </option>
           <option value = "#3"> St. Vincent De Paul Society Multi Service Center </option>
           <option value = "#4"> Coalition On Homelessness San Francisco </option>
@@ -109,35 +121,23 @@
       </p>
 
     <p>
-      <label for="don"><b> What do you want to donate? </b></label>
+      <!-- <label oninput = "submitRequest()" id = "donations" for="don"><b> What do you want to donate? </b></label> -->
+      <label><b> What do you want to donate? </b></label>
+      <textarea id = "donations" rows="4" cols="50" placeholder="type food here"></textarea>
+
       </p>
 
-    <p>
-          <textarea rows="4" cols="50">
-          placeholder text!
-        </textarea>
-    </p>
 
 
-        <div class="button">
-           <button onclick="location.href = 'index.html';" id="myButton" class="w3-bar-item w3-button" > ShareFood!! </button>
+        <!-- <div class="button"> -->
+          <!-- <button onclick="submitRequest()" type="submit" formaction="enter">ShareFood</button> -->
+          <button onclick="submitRequest()">ShareFood</button>
 
-
-
-        </div>
+        <!-- </div> -->
       </div>
-    </form>
-    <!DOCTYPE html>
-    <html>
-    <body>
-    <div class="split left">
-      <div class="centered">
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1GkBElfGlu4rvUT7HrpSs5wa-cMkMhV46" width="640" height="480"></iframe>
-      </div>
-    </div>
-    </body>
-    </html>
-
+    <!-- </form> -->
 
   </div>
 </div>
+</body>
+</html>
