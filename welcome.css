@@ -26,6 +26,9 @@
 
   }
 
+.desktop_buttons{
+  padding: 25px;
+}
 
 .font {
   font-family: "Times New Roman", serif;
