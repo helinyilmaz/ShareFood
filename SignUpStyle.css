@@ -7,7 +7,7 @@
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  padding-top: 200px;
+  padding-top: 0px;
   padding-bottom: 0px;
   font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:0px}
 }
@@ -18,6 +18,7 @@ body{
 }
 
 .left {
+  padding-top:200px;
   background-color:#FFBF69;
   left: 10px;
   font-family:{"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:0px}
@@ -25,7 +26,7 @@ body{
 
 /* Control the right side */
 .right {
-
+  padding-top:200px;
   right: 10px;
   background-color:#E1F2F1;
   font-family:{"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:0px}
