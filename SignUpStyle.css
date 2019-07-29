@@ -79,7 +79,7 @@ tr:nth-child(even) {
     display: block;
     text-align: center;
     font-family: "Segoe UI",Arial,sans-serif;
-    border-radius: 6px;
+    border-radius: 4px;
     font-weight: bold;
 }
 .button:hover {
