@@ -75,7 +75,7 @@ tr:nth-child(even) {
     font-size: 20px;
     padding: 1em 2em;
     cursor: pointer;
-    margin: 0 auto 60px;
+    margin: 0 auto 40px;
     display: block;
     text-align: center;
     font-family: "Segoe UI",Arial,sans-serif;
