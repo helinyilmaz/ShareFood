@@ -15,6 +15,10 @@ body{
   background-color:#E1F2F1;
 }
 
+.h13{
+  color:#FF9F1C;font-size:50px;font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:0px}
+}
+
 .button{
   background:#FFBF69 ;
     border: 0;
@@ -522,10 +526,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   padding:175px;
 }
 
-
-.h13{
-  color:#FF9F1C;font-size:50px;font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:0px}
-}
 
 .button{
   background:#FFBF69 ;
