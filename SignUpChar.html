@@ -67,26 +67,33 @@
       <option value = "#26"> The Richmond Neighborhood Center </option>
     </select>
   </p>
-  <p>
+    <p>
     <button onclick="searchRequest()">Select</button>
 
   </p>
 
-    <p>
+    <!-- <p>
       <label for="requests"><b> Your Requests:</b></label>
-      </p>
+      </p> -->
 
-    <p>
-          <textarea id = "edit" readonly rows="4" cols="50"></textarea>
-          <!-- <p id = "edit">hello</p> -->
-
-    </p>
-
-
-        <div class="clearfix">
-          <button type="submit" formaction="enter">Accept!</button>
-
-        </div>
+      <div>
+        <table id = "update">
+          <tr>
+            <th>Restaurant Name</th>
+            <th>Donations</th>
+            <th>Accepted</th>
+          </tr>
+          <!-- <tr>
+            <td>
+              object.name
+              </td>
+            <td>
+              object.donations
+            </td>
+          </tr> -->
+        </table>
+    <!-- <p><textarea readonly rows="4" cols="50"></textarea></p> -->
+    </div>
       </div>
 
   </div>
