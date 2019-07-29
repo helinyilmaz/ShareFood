@@ -18,7 +18,7 @@
 
 /* Control the left side */
 
-.left {
+. split left {
   padding-top:200px;
   background-color:#FFBF69;
   left: 10px;
@@ -27,7 +27,7 @@
 }
 
 /* Control the right side */
-.right {
+.split right {
   padding-top:200px;
   right: 10px;
   background-color:#E1F2F1;
