@@ -7,21 +7,6 @@ function getName() {
   console.log("name: " + placename);
 }
 
-function getRequests(charity) {
-  console.log("getRequests() running");
-  var dataFile = "requestDatabase.json";
-  $.getJSON(dataFile, function(result){
-    $.each(result, function(name, object){
-      if(object["charity"] === charity) {
-        console.log("you have a request from " + object["name"]);
-      }
-      else {
-        console.log("no match");
-      }
-    });
-  });
-}
-
 function submitRequest() {
   var restValue = document.getElementById("restaurant");
   var restText = (restValue.options[restValue.selectedIndex].text).toLowerCase();
