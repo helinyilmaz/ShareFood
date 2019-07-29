@@ -1,4 +1,4 @@
-
+let tempDatabase = [];
 
 function getName() {
   var placename = document.getElementById("name").value;
@@ -7,76 +7,66 @@ function getName() {
   console.log("name: " + placename);
 }
 
-function getRestaurant() {
-  console.log("getRestaurant");
-  var n = "denny's";
-  dataFile = "charities.json";
+function getRequests(charity) {
+  console.log("getRequests() running");
+  var dataFile = "requestDatabase.json";
   $.getJSON(dataFile, function(result){
     $.each(result, function(name, object){
-      if(object["name"].toLowerCase() === n) {
-        // console.log(object);
-        if(object["accepted"] == true) {
-          alert("Shipment received!");
-        }
+      if(object["charity"] === charity) {
+        console.log("you have a request from " + object["name"]);
       }
       else {
         console.log("no match");
       }
-      // console.log(object["name"]);
     });
   });
 }
 
 function submitRequest() {
-  // const fs = require('fs');
-  let tempDatabase = [];
-  var restName = (document.getElementById("restaurant").value).toLowerCase();
-  var charName = (document.getElementById("charity").value).toLowerCase();
-  var donations = document.getElementById("donations").value;
+  var restValue = document.getElementById("restaurant");
+  var restText = (restValue.options[restValue.selectedIndex].text).toLowerCase();
+  restText = restText.split(' ').join('_');
+  var selectedCharValue = document.getElementById("charity");
+  var selectedCharText = (selectedCharValue.options[selectedCharValue.selectedIndex].text).toLowerCase();
+  selectedCharText = selectedCharText.split(' ').join('_');
+  var donations = (document.getElementById("donations").value).toLowerCase();
   var accepted = false;
   var obj = {
-    "name" : restName,
-    "charity" : charName,
+    "name" : restText,
+    "charity" : selectedCharText,
     "donations" : donations,
     "accepted" : accepted
   };
 
-  
-    // let input = prompt("find ur restaurant");
-    // if (input === "q" || input === null) {
-    //   break;
-    // }
+  let db = localStorage.getItem("database");
+  if (db == null) {
+    db = localStorage.setItem("database", JSON.stringify([obj]));
+  }
+  else {
+    db = JSON.parse(db);
+    db.push(obj);
+    localStorage.setItem("database", JSON.stringify(db));
+  }
+}
 
-    tempDatabase.push(obj);
-    console.log(tempDatabase);
+function searchRequest() {
+  var charValue = document.getElementById("charity");
+  var charText = (charValue.options[charValue.selectedIndex].text).toLowerCase();
+  charText = charText.split(' ').join('_');
 
+  let db = localStorage.getItem("database");
+  if (db == null) {
 
-  console.log(obj);
-  tempDatabase.push(obj);
-  console.log(tempDatabase);
-
-  // let request = new XMLHttpRequest();
-  // var show = request.open("GET", "requestDatabase.json", true);
-  // console.log(show);
-  // jsonReader("./shareFood.json", (err, obj) => {
-  //   if (err) {
-  //     console.log("error reading file: ", err);
-  //     return;
-  //   }
-  //
-  //   fs.writeFile("./requestDatabase.json", JSON.stringify(obj), err => {
-  //     if (err) {
-  //       console.log("error writing file: ", err);
-  //     }
-  //   });
-  // });
-
-  // const jsonString = JSON.stringify(obj);
-  // fs.writeFile('./requestDatabase.json', jsonString, err => {
-  //   if (err) {
-  //     console.log("Error writing file", err);
-  //   } else {
-  //     console.log("Successfully wrote file");
-  //   }
-  // });
+  }
+  else {
+    var found = "not found";
+    db = JSON.parse(db);
+    for (var i = 0; i < db.length; i++) {
+      var offer = db[i];
+      if (offer.charity == charText) {
+        found = "found";
+      }
+    }
+    console.log(found);
+  }
 }
