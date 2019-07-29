@@ -54,11 +54,6 @@ body{
   padding: 25px;
 }
 
-.font {
-  font-family: "Times New Roman", serif;
-  margin:auto;
-}
-
 /* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
 
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
