@@ -50,8 +50,13 @@ function searchRequest() {
       var offer = db[i];
       if (offer.charity == charText) {
         found = "found";
+        document.getElementById("edit").innerHTML = "name: " + offer.name + " donations: " + offer.donations;
+      } else {
+        document.getElementById("edit").innerHTML = "not found";
       }
     }
-    console.log(found);
+    // console.log(found);
   }
+
+
 }
