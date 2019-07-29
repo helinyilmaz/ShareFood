@@ -12,6 +12,10 @@
   font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:0px}
 }
 
+#button-link{
+  text-decoration: none;
+}
+
 /* Control the left side */
 body{
   background-color: #FF9F1C;
