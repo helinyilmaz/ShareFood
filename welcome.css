@@ -1,10 +1,14 @@
 .welcome{
-  color: #FFFFFF; font-size:120px;font-family:'Darker Grotesque', sans-serif;
+  color: #FFFFFF; 
+  font-size:120px;
+  font-family:"Segoe UI",Arial,sans-serif;
   padding: 100px;
 }
 
 .iAm{
-  color:#FFFFFF; font-size: 45px; font-family:'Darker Grotesque', sans-serif;
+  color:#FFFFFF; 
+  font-size: 45px;
+  font-family:"Segoe UI",Arial,sans-serif;
 }
 
 /* body{ 
