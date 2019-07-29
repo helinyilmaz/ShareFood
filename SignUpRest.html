@@ -8,14 +8,14 @@
 <body>
 <div class="split left">
   <div class="centered">
-
-
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1GkBElfGlu4rvUT7HrpSs5wa-cMkMhV46" width="640" height="480"></iframe>
   </div>
 </div>
 
 <div class="split right">
   <div class="centered">
+    <!-- <form action="action_page.php" style="border:1px solid #ccc"> -->
+    <!-- <form style="border:1px solid #ccc"> -->
       <div class="container">
         <a href="desktop.html"></a>
         <link rel="stylesheet" type="text/css" href="SignUpStyle.css">
@@ -122,16 +122,19 @@
         </select>
       </p>
 
-      <label><b> <p> What do you want to donate? </p> </b></label>
-
-
-        <p>
-      <textarea id = "donations" rows="4" cols="50" placeholder="Type food here"></textarea>
+    <p>
+      <!-- <label oninput = "submitRequest()" id = "donations" for="don"><b> What do you want to donate? </b></label> -->
+      <label><b> What do you want to donate? </b></label>
+      <textarea id = "donations" rows="4" cols="50" placeholder="type food here"></textarea>
 
       </p>
+        <!-- <div class="button"> -->
+          <!-- <button onclick="submitRequest()" type="submit" formaction="enter">ShareFood</button> -->
+          <button onclick="submitRequest()">ShareFood</button>
 
-        <button onclick="submitRequest()">ShareFood</button>
+        <!-- </div> -->
       </div>
+    <!-- </form> -->
 
   </div>
 </div>
