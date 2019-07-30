@@ -31,7 +31,7 @@ body{
 
 /* Control the right side */
 .right {
-  padding-top:200px;
+  padding-top:100px;
   right: 10px;
   background-color:#E1F2F1;
   background-size: contain;
