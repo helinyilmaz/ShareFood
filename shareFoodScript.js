@@ -67,7 +67,7 @@ function searchRequest() {
       var acceptedCell = row.insertCell(2);
       restCell.innerHTML = object.name;
       donationCell.innerHTML = object.donations;
-      acceptedCell.innerHTML = "<button>Accept</button>";
+      acceptedCell.innerHTML = "<button class="button3">Accept</button>";
       // var txt = document.createElement("tr");  // Create with DOM
       // var rest = document.createElement("td");
       // rest.innerHTML = object.name;
