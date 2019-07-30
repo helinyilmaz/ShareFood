@@ -95,8 +95,8 @@ tr:nth-child(even) {
   color:black;
 }
 
-.button2:
-  background:#FFBF69;
+.button2{
+  background:#2EC4B6;
     border: 0;
     color: white;
     font-size: 14px;
