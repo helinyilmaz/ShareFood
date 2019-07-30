@@ -1,5 +1,3 @@
-let tempDatabase = [];
-
 function getName() {
   var placename = document.getElementById("name").value;
   var address = document.getElementById("add").value;
@@ -34,6 +32,8 @@ function submitRequest() {
   }
 }
 
+
+
 function searchRequest() {
   let allRequests = [];
   var charValue = document.getElementById("charity");
@@ -42,19 +42,16 @@ function searchRequest() {
 
   let db = localStorage.getItem("database");
   if (db == null) {
-
+    alert("There are no donations to" + charText + " as of now.");
   }
   else {
-    var found = "not found";
+    // var found = "not found";
     db = JSON.parse(db);
     for (var i = 0; i < db.length; i++) {
       var offer = db[i];
       if (offer.charity == charText) {
         allRequests.push(offer);
         // found = "found";
-        // document.getElementById("edit").innerHTML = "name: " + offer.name + " donations: " + offer.donations;
-      } else {
-        document.getElementById("edit").innerHTML = "not found";
       }
     }
 
@@ -67,7 +64,23 @@ function searchRequest() {
       var acceptedCell = row.insertCell(2);
       restCell.innerHTML = object.name;
       donationCell.innerHTML = object.donations;
-      acceptedCell.innerHTML = "<button class="button3">Accept</button>";
+
+      var acceptButton = document.createElement('button');
+      acceptButton.setAttribute('class', "button3");
+      acceptButton.innerHTML ='Accept';
+      acceptedCell.append(acceptButton);
+      index = acceptedCell.parentNode.rowIndex;
+      acceptButton.setAttribute('onclick', "deleteRow("+index+")");
+
+      // $('input[type="button"]').click(function(e) {
+        // $(this).closest('tr').remove()
+      // })
+      // for (var i = 1; i < table.rows.length; i++) {
+      //   table.rows[i].cells[2].onclick = function()
+        // index = this.parentElement.rowIndex;
+      //   table.deleteRow(index);
+      // }
+
       // var txt = document.createElement("tr");  // Create with DOM
       // var rest = document.createElement("td");
       // rest.innerHTML = object.name;
@@ -82,5 +95,9 @@ function searchRequest() {
     // console.log(found);
 
     }
+  }
 }
+
+function deleteRow(i) {
+  document.getElementById("update").deleteRow(i);
 }
