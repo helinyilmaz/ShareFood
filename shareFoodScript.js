@@ -42,7 +42,7 @@ function searchRequest() {
 
   let db = localStorage.getItem("database");
   if (db == null) {
-    alert("There are no donations to" + charText + " as of now.");
+    alert("There are no donations to " + charText + " as of now.");
   }
   else {
     // var found = "not found";
