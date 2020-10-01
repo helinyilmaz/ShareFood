@@ -36,6 +36,11 @@
   background-color:#FFCD8C;
   color:black;
 }
+.button:hover {
+  transition: transform .5s ease;
+  transform: scale(1.3);
+
+  }
 
   }
 
